@@ -974,6 +974,11 @@ class ARIMA(BaseARIMA):
         return self
 
     @if_delegate_has_method('arima_res_')
+    def mse(self):
+        """Get the MSE, the mean squared error"""
+        return self.arima_res_.mse
+
+    @if_delegate_has_method('arima_res_')
     def aic(self):
         """Get the AIC, the Akaike Information Criterion:
 

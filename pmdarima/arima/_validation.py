@@ -12,7 +12,7 @@ from sklearn import metrics
 from pmdarima.warnings import ModelFitWarning
 
 # The valid information criteria
-VALID_CRITERIA = {'aic', 'aicc', 'bic', 'hqic', 'oob'}
+VALID_CRITERIA = {'aic', 'aicc', 'bic', 'hqic', 'oob', 'mse'}
 
 
 def auto_intercept(with_intercept, default):
