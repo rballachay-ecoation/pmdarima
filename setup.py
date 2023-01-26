@@ -214,7 +214,7 @@ def check_package_status(package, min_version):
 def do_setup():
     # setup the config
     metadata = dict(name=PYPIDIST,
-                    # packages=[DISTNAME],
+                    packages=[DISTNAME],
                     maintainer=MAINTAINER,
                     maintainer_email=MAINTAINER_EMAIL,
                     description=DESCRIPTION,
